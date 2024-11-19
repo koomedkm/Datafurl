@@ -1,0 +1,70 @@
+print("Hello, World!")
+#prints the text "hello world"
+
+name = "Alice"
+print(name)
+#prints the variable name
+
+name = "Alice"
+age = 30
+print("Name:", name, "Age:", age)
+#Prints text and variable together using comma separation/Automatic space separation
+
+name = "Alice"
+age = 30
+print("Name: " + name + " Age: " + str(age))
+#Concatenation- joins the string and variables with the  + operator
+#NB: this requires cconverting the nonstring variables to strings using str()
+
+name = "Alice"
+age = 30
+print(f"Name: {name} Age: {age}")
+#using formatted string literals - f strings
+#a python3.6 feature for moe readable and conveniet way of embedding expression inside strings
+
+name = "Alice"
+age = 30
+print("Name: {} Age: {}".format(name, age))
+#The previous method of embedding expression inside strings
+
+print("Hello")
+print("World")
+#rinting multiple lines using multiple print() calls
+
+print("Hello\nWorld")
+#Printing  multiple lines using the newline character \n
+
+print("apple", "banana", "cherry", sep="-")
+#printing with custom separator 
+#By default, print() separates multiple arguments with a space. You can change this behavior by using the sep parameter.
+
+print("Hello", end=" ")
+print("World")
+#printng with custom End
+#By default, print() ends with a newline (\n). You can change this by using the end parameter
+#In this case, the end=" " ensures that "Hello" is printed without a newline, and a space is added instead. Then the second print() call prints "World" on the same line.
+
+
+# Common f-string Syntaxg
+from datetime import datetime
+now = datetime.now()
+print(f"Today's date is: {now:%Y-%m-%d %H:%M:%S}")
+# Date time formatting
+
+fruits = ["apple", "banana", "cherry"]
+print(f"First fruit: {fruits[0]}, Last fruit: {fruits[-1]}")
+#accessing list elements
+
+student = {"name": "Alice", "age": 20, "grade": "A"}
+print(f"Student {student['name']} is {student['age']} years old and got grade {student['grade']}.")
+#acessing dictionary elements
+
+name = "Bob"
+score = 95
+print(f"{name:<10} | {score:>3}")
+#padding and aliignement
+#:< for left-alignment
+#:> for right-alignment
+#:^ for center alignment
+#:<n for padding with spaces to length n
+
